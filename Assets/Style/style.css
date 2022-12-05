@@ -4,8 +4,15 @@
     --lightBlue: rgb(117, 211, 255);
     --lightGrey: rgb(77, 75, 95);
 }
+/*Defines how content is sized on the page*/
+* {
+    box-sizing: border-box;
+  }
 
 body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
     background-color: White;
     font-family: Arial, Helvetica, sans-serif;
     color:var(--lightGrey);
@@ -30,5 +37,5 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
+    grid-template-areas: "placeholder";
 }
