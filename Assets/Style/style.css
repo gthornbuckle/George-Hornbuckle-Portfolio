@@ -19,12 +19,48 @@ body{
     font-size: 20px;
 }
 
+.header{
+    padding: 10px;
+    background-color: var(--darkGrey);
+    color: var(--lightBlue);
+}
+
 #mainHeading{
-    color: var(--textPink);
+    color: var(--darkGrey);
+    background-color: var(--lightBlue);
     display:flex;
+    flex-direction: row;
     justify-content: flex-start;
-    padding: 50px;
+    padding: 10px;
     font-size:32px;
+}
+
+nav{
+    font-size: 24px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.navItems{
+    list-style-type: none;
+    display: inline-block;
+    border-bottom: 2px solid var(--lightBlue);
+}
+
+.navItems:hover{
+    border-color: white;
+}
+
+nav a{
+    color: var(--lightBlue);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:white;
+    border-color: white;
 }
 
 #photo{

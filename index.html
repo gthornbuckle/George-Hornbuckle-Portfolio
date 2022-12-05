@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="./Assets/Style/style.css" />
 </head>
 <body>
-    <header> <h1 id="mainHeading">George Hornbuckle</h1>
+    <header class="header"> 
+        <h1 id="mainHeading">George Hornbuckle</h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
-                <li>Resume</li>
+                <li class="navItems">
+                    <a href=#about-me>About Me</a>
+                </li>
+                <li class="navItems">
+                    <a href="#work">Work</a>
+                </li>
+                <li class="navItems">
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li class="navItems">
+                    <a href="https://github.com/gthornbuckle">Resume</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>About Me</h2>
+        <h2 id="about-me">About Me</h2>
             <div id="photo"></div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, necessitatibus harum enim officiis iste vero vitae dolores eligendi saepe id excepturi eum reprehenderit? Odit cumque eligendi omnis facilis autem iste?
@@ -31,7 +40,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maiores distinctio perferendis aliquam hic laboriosam esse sunt quis? Enim, sunt a. Pariatur consequatur dolorem cupiditate vel ad praesentium optio rerum!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repudiandae tenetur, ad tempora laborum impedit unde. Impedit, totam eius? Ipsa, aut ratione! Eius ducimus corrupti iusto totam pariatur quam necessitatibus?
             </p>
-        <h2>Work</h2>
+        <h2 id="work">Work</h2>
             <section id = "workGrid">
                 <div id="recentProject" class ="workGridStyle">
                     <div class="workGridHeadings"><b>Prework Study Guide</b></div>
@@ -49,7 +58,7 @@
                     <div class="workGridHeadings"><b>Placeholder Project</b></div>
                 </div>
             </section>
-        <h2>Contact Me</h2>
+        <h2 id="contact-me">Contact Me</h2>
             <ul>
                 <li>071234567890</li>
                 <li>georgehornbuckle@example.com</li>
