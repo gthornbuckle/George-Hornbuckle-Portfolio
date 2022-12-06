@@ -78,6 +78,12 @@ nav a:hover{
     border-color: white;
 }
 
+#banner{
+    height: 200px;
+    width: 100%;
+    background-image: url(../Images/headerimage.jpg);
+    background-size: cover;
+}
 h2{
     width: 200px;
     margin-left:20px;
@@ -153,7 +159,7 @@ article{
     display:flex
 }
 
-.workGridHeadings{
+.workGridHeadings a{
     color:var(--darkGrey);
     font-size: 24px;
     background-color: var(--lightBlue);
@@ -211,4 +217,49 @@ footer{
 footer a{
     color: var(--darkGrey);
     text-decoration: none;
+}
+/* Media query takes effect when screen width is less than 1000px*/ 
+@media only screen and (max-width: 1000px){
+    #photo{
+        display: none; /* Hides photo to stop it overlapping other elements*/
+    }
+
+    .navItems{
+        display: block; /* Navbar displayed in a column to make it easier to see on a smaller screen*/
+    }
+    /* All flex containers are changed from rows to columns to better suit the screen resolution*/
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutMeFlex{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    h2{
+        border-bottom: 5px solid var(--darkGrey);
+        border-right: none;
+        text-align: center;
+    }
+    /* Project grid layout changed to display only one project per row*/
+    #workGrid{
+        grid-area: workContent;
+        align-content: center;
+        display: grid;
+        flex-grow: 1;
+        grid-template-rows: 400px 400px 400px 400px 400px 400px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "recentProject"
+        "recentProject"
+        "project1"
+        "project2"
+        "project3"
+        "project4";
+    }
 }
